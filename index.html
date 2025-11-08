@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="record-player">
+            <!-- Turntable base -->
+            <div class="base">
+                <div class="platter-container">
+                    <!-- Vinyl record -->
+                    <div class="vinyl" id="vinyl">
+                        <div class="label">
+                            <div class="label-text">SIDE A</div>
+                        </div>
+                        <div class="grooves"></div>
+                    </div>
+                    
+                    <!-- Center spindle -->
+                    <div class="spindle"></div>
+                </div>
+                
+                <!-- Tonearm -->
+                <div class="tonearm" id="tonearm">
+                    <div class="arm"></div>
+                    <div class="headshell"></div>
+                    <div class="needle"></div>
+                </div>
+                
+                <!-- Controls -->
+                <div class="controls">
+                    <button class="btn play-btn" id="playBtn">▶</button>
+                    <button class="btn stop-btn" id="stopBtn">■</button>
+                    <div class="speed-selector">
+                        <button class="speed-btn active" data-speed="33">33</button>
+                        <button class="speed-btn" data-speed="45">45</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spotify-embed">
+    <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6?utm_source=generator" 
+            width="100%" 
+            height="152" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+    </iframe>
+</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
